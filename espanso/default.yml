@@ -1,0 +1,25 @@
+# Last edited: November 29, 2023
+# Configuration used on macOS Sonoma 14.1.1
+
+# --- Icon visibility configuration
+# Hides Espanso's icon on macOS or Windows.
+show_icon: false
+
+# --- Notification status configuration
+# Hides Espanso notifications.
+show_notifications: false
+
+# --- Expansion reversion configuration
+# Determines whether to revert an expansion if Backspace is pressed.
+# Why I'm setting it to "false": When I typed the test expansion (":espanso"),
+# I'd see my system pasting "Hi there!" and then removing part of the expansion,
+# resulting in a "Hi:espanso" output.
+# Removing the option to revert an expansion seemingly fixes this problem.
+undo_backspace: false
+
+# --- Injection backend configuration
+# Espanso offers different backends for injecting text. You can set it to "Auto",
+# and it will make a judgement of what's the most appropriate backend for that specific
+# situation. And you can set it to "Clipboard" or "Inject" if you're having troube with Auto.
+# Why I'm using "Inject": It was the only backend option that worked consistently on my Mac.
+backend: Inject
